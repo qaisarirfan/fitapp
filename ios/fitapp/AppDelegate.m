@@ -47,6 +47,14 @@ static void InitializeFlipper(UIApplication *application) {
   self.window.rootViewController = rootViewController;
   [self.window makeKeyAndVisible];
   
+  // checking all fonts here
+  for (NSString* family in [UIFont familyNames]){
+    NSLog(@"%@", family);
+    for (NSString* name in [UIFont fontNamesForFamilyName: family]){
+      NSLog(@" %@", name);
+    }
+  }
+  
   [RNBootSplash initWithStoryboard:@"BootSplash" rootView:rootView];
   if ([FIRApp defaultApp] == nil) {
     [FIRApp configure];

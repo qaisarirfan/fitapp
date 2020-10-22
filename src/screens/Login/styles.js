@@ -19,6 +19,7 @@ const styles = () => {
       color: "rgb(255, 255, 255)",
       fontWeight: "bold",
       textAlign: "center",
+      fontFamily: "Roboto",
     },
 
     inputContainer: {},
