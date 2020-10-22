@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Tooltip /> Does not explode 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#FF8585",
+      "bottom": "110%",
+      "left": 0,
+      "marginHorizontal": 12,
+      "position": "absolute",
+      "right": 0,
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "padding": 12,
+      }
+    }
+  >
+    
+  </Text>
+  <View
+    style={
+      Object {
+        "backgroundColor": "transparent",
+        "borderBottomColor": "#FF8585",
+        "borderBottomWidth": 15,
+        "borderLeftColor": "transparent",
+        "borderLeftWidth": 15,
+        "borderRightColor": "transparent",
+        "borderRightWidth": 15,
+        "borderStyle": "solid",
+        "height": 0,
+        "left": 12,
+        "position": "absolute",
+        "top": "100%",
+        "transform": Array [
+          Object {
+            "rotate": "180deg",
+          },
+        ],
+        "width": 0,
+      }
+    }
+  />
+</View>
+`;
