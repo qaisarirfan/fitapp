@@ -4,6 +4,7 @@ import {NavigationContainer} from "@react-navigation/native"
 import {createStackNavigator} from "@react-navigation/stack"
 import flow from "lodash/flow"
 import PropTypes from "prop-types"
+import GlobalFont from "react-native-global-font"
 
 import Login from "../screens/Login"
 import Home from "../screens/Home"
@@ -16,8 +17,10 @@ const OptionsStack = () => {
 
 const App = ({isLoggedin}) => {
   useEffect(() => {
+    let fontName = "Roboto"
+    GlobalFont.applyGlobal(fontName)
     RNBootSplash.hide({duration: 250})
-  }, [])
+  })
 
   const Stack = createStackNavigator()
 
